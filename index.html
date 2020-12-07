@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <style>
+    body {
+      background-color:  hsl(0, 0%, 98%);
+      color:  hsl(229, 6%, 66%);
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    img {
+      margin: 3%, 3%, 3%, 70%;
+    }
+
+    h2 {
+      color: hsl(229, 6%, 66%);
+      font-weight: 400;
+    }
+
+    h3 {
+      color:  hsl(234, 12%, 34%);
+      font-weight: 600;
+    }
+
+    h2 span {
+      color:  hsl(234, 12%, 34%);
+      font-weight: 600;
+    }
+
+    .header {
+      margin: 25%, 8%, 10%, 22%;
+      text-align: center;
+    }
+
+    .feature-box {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.10);
+      margin: 8%;
+      padding: 5% 5% 3% 5%;
+    }
+
+    #supervisor-top {
+      border-top: 5px hsl(180, 62%, 55%) solid;
+    }
+
+    #team-builder-top {
+      border-top: 5px hsl(0, 78%, 62%) solid;
+    }
+
+    #karma-top {
+      border-top: 5px hsl(34, 97%, 64%) solid;
+    }
+
+    #calculator-top {
+      border-top: 5px hsl(212, 86%, 64%) solid;
+    }
+
+    @media (min-width: 1200px) and (max-width: 2100px) {
+      .header {
+        margin: 25%, 8%, 10%, 22%;
+        text-align: center;
+      }
+
+     .bottom {
+       display: flex;
+     }
+
+     .feature-box {
+       margin: 5%;
+     }
+
+     .left-box {
+       flex: 33%;
+       margin-top: 12%;
+       margin-left: 8%;
+     }
+
+     .center-box {
+        flex: 33%;
+      }
+
+      #team-builder-box {
+        margin-bottom: 12%;
+      }
+
+      .right-box {
+        flex: 33%;
+        margin-top: 12%;
+        margin-right: 8%;
+      }
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h2>Reliable, efficient delivery</h2>
+      <h2><span>Powered by Technology</span></h2>
+
+      <p>Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</p>
+    </div>
+
+    <div class="bottom">
+      <div class="left-box">
+        <div class="feature-box" id="supervisor-top">
+          <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" alt="supervisor-icon" class="supervisor-icon">
+        </div>
+      </div>
+    
+      <div class="center-box">
+        <div class="feature-box" id="team-builder-top">
+          <h3>Team Builder</h3>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <img src="images/icon-team-builder.svg" alt="team-builder-icon" class="team-builder-icon">
+        </div>
+
+        <div class="feature-box" id="karma-top">
+          <h3>Karma</h3>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img src="images/icon-karma.svg" alt="icon-karma" class="karma-icon">
+        </div>
+      </div>
+      
+      <div class="right-box">
+        <div class="feature-box" id="calculator-top">
+          <h3>Calculator</h3>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+          <img src="images/icon-calculator.svg" alt="calculator-icon" class="calculator-icon">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="www.favourwale.com">Favour Wale</a>.
+    </p>
+  </footer>
+</body>
+</html>
